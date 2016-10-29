@@ -8,7 +8,7 @@ import Root from './containers/root';
 const store = configureStore();
 
 
-history = syncHistoryWithStore(hashHistory, store);
+const history = syncHistoryWithStore(hashHistory, store);
 
 render(
   <Root store={store} history={history} />,
